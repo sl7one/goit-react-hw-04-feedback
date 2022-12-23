@@ -21,7 +21,7 @@ const App = () => {
 
   useEffect(() => {
     setPercentage(Number(((good / summ) * 100).toFixed(2)));
-  }, [summ]);
+  }, [summ, good]);
 
   const onClick = event => {
     const { id } = event.target.dataset;
